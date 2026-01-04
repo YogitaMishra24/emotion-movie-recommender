@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px 60px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ffde59;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .btn {
+            text-decoration: none;
+            background: #ffde59;
+            color: #222;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 1.1em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #fff;
+            box-shadow: 0 0 20px #ffde59;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            position: absolute;
+            bottom: 15px;
+            width: 100%;
+            font-size: 0.9em;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 Movie Recommendation System</h1>
+        <p>Choose your recommendation mode:</p>
+        <div class="buttons">
+            <a href="/emotion" class="btn">🎭 Emotion-Based Recommendation</a>
+            <a href="/similar" class="btn">🎥 Movie Match Finder</a>
+        </div>
+    </div>
+    <footer>© 2025 Movie Recommendation Project</footer>
+</body>
+</html>

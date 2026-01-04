@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9edf0;
+    text-align: center;
+    padding: 40px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+select, button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.movie-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.movie-card {
+    margin: 15px;
+    width: 180px;
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ------------------------------
+   Similar Page (index.html)
+--------------------------------*/
+.similar-body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  padding: 30px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #ffcc70;
+  letter-spacing: 1px;
+}
+
+select {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+select:hover {
+  transform: scale(1.02);
+}
+
+button {
+  background-color: #ffcc70;
+  border: none;
+  color: #1f1c2c;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #fff;
+  transform: scale(1.05);
+}
+
+.back-container {
+  margin-top: 25px;
+}
+
+.back-btn, .emotion-btn {
+  background-color: #ffcc70;
+  color: #1f1c2c;
+  padding: 8px 18px;
+  margin: 0 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover, .emotion-btn:hover {
+  background-color: #fff;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
